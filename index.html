@@ -85,11 +85,9 @@
 
         /* --- SCREEN 1: INVITE --- */
         #invite-screen { display: flex; flex-direction: column; align-items: center; z-index: 10; }
-        
-        /* DISTANCE BETWEEN BUTTONS */
         .button-wrapper { 
             display: flex; 
-            gap: 180px; /* Increased distance */
+            gap: 180px; 
             margin-top: 40px; 
             height: 100px; 
             align-items: center; 
@@ -151,7 +149,7 @@
         }
         .envelope.open { transform: rotateY(180deg); }
 
-        /* --- PRESENT --- */
+        /* --- PINK SECRET PRESENT --- */
         #secret-gift-container {
             display: none; 
             flex-direction: column;
@@ -237,7 +235,7 @@
                 <div class="gift-lid"></div>
             </div>
             <div id="qr-placeholder">
-                <img src="YOUR_QR_CODE_IMAGE_URL_HERE" alt="QR Code Surprise">
+                <img src="HAPPY VALENTINES DAY.png" alt="Happy Valentines Day QR Code">
             </div>
         </div>
     </div>
@@ -281,12 +279,7 @@
         function moveNo() {
             jumpCount++;
             const no = document.getElementById('noBtn');
-            
-            // SHOW PLEAD TEXT AFTER 3 JUMPS
-            if (jumpCount >= 3) {
-                pleadText.style.display = "block";
-            }
-            
+            if (jumpCount >= 3) pleadText.style.display = "block";
             if (jumpCount >= 8) {
                 gameHeader.innerText = "HONEY PLEASE!!";
                 gameHeader.style.color = "#d60000";
